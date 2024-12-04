@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { StyleSheet } from 'react-native-unistyles';
+import { COUNT } from "../utils";
 
 const Demo = () => {
     return (
         <View style={styles.container}>
-            {new Array(1000).fill(0).map((_, i) => (
+            {new Array(COUNT).fill(0).map((_, i) => (
                 <TouchableOpacity
                     key={i}
                     onPress={() => alert(`Item ${i} clicked!`)}
